@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heatstroke - Beat by Beat First Aid Education</title>
+    <meta name="description" content="Learn to recognize and treat heatstroke and heat exhaustion. Essential first aid for preventing and responding to dangerous heat-related emergencies.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.6;
+            color: #333333;
+            background-color: #ffffff;
+        }
+
+        /* Header and Navigation */
+        header {
+            background: #ffffff;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #dc3545;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo::after {
+            content: "⚡";
+            margin-left: 0.5rem;
+            font-size: 1.2rem;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #333333;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #dc3545;
+        }
+
+        /* Main Content */
+        main {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .breadcrumb {
+            margin-bottom: 2rem;
+            font-size: 0.9rem;
+            color: #6c757d;
+        }
+
+        .breadcrumb a {
+            color: #dc3545;
+            text-decoration: none;
+        }
+
+        .breadcrumb a:hover {
+            text-decoration: underline;
+        }
+
+        .topic-header {
+            text-align: center;
+            margin-bottom: 3rem;
+            padding: 2rem;
+            background: linear-gradient(135deg, #ff6b35 0%, #ff8f42 100%);
+            color: white;
+            border-radius: 15px;
+        }
+
+        .topic-header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .topic-header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        /* Emergency Alert */
+        .emergency-alert {
+            background: #dc3545;
+            color: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin-bottom: 2rem;
+            text-align: center;
+            font-weight: 600;
+        }
+
+        .emergency-alert h2 {
+            margin-bottom: 0.5rem;
+            font-size: 1.5rem;
+        }
+
+        /* Content Sections */
+        .content-section {
+            margin-bottom: 3rem;
+            background: #f8f9fa;
+            padding: 2rem;
+            border-radius: 10px;
+        }
+
+        .content-section h2 {
+            color: #dc3545;
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            border-bottom: 3px solid #dc3545;
+            padding-bottom: 0.5rem;
+        }
+
+        .content-section h3 {
+            color: #333333;
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+            margin-top: 1.5rem;
+        }
+
+        .content-section p {
+            margin-bottom: 1rem;
+            line-height: 1.7;
+            color: #555555;
+        }
+
+        .content-section ul,
+        .content-section ol {
+            margin-left: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .content-section li {
+            margin-bottom: 0.5rem;
+            color: #555555;
+        }
+
+        /* Comparison Table */
+        .comparison-table {
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin: 2rem 0;
+        }
+
+        .comparison-table table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .comparison-table th {
+            background: #dc3545;
+            color: white;
+            padding: 1rem;
+            text-align: left;
+            font-weight: 600;
+        }
+
+        .comparison-table td {
+            padding: 1rem;
+            border-bottom: 1px solid #e9ecef;
+        }
+
+        .comparison-table tr:hover {
+            background: #f8f9fa;
+        }
+
+        /* Step-by-Step Guide */
+        .step-guide {
+            background: white;
+            border-radius: 10px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .step {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            background: #f8f9fa;
+            border-radius: 10px;
+            border-left: 5px solid #dc3545;
+        }
+
+        .step-number {
+            background: #dc3545;
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            margin-right: 1rem;
+            flex-shrink: 0;
+        }
+
+        .step-content h3 {
+            color: #333333;
+            margin-bottom: 0.5rem;
+        }
+
+        .step-content p {
+            color: #555555;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Warning Boxes */
+        .warning-box {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            border-left: 5px solid #f39c12;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 5px;
+        }
+
+        .warning-box h4 {
+            color: #856404;
+            margin-bottom: 0.5rem;
+        }
+
+        .warning-box p {
+            color: #856404;
+            margin: 0;
+        }
+
+        /* Danger Boxes */
+        .danger-box {
+            background: #f8d7da;
+            border: 1px solid #f5c6cb;
+            border-left: 5px solid #dc3545;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 5px;
+        }
+
+        .danger-box h4 {
+            color: #721c24;
+            margin-bottom: 0.5rem;
+        }
+
+        .danger-box p {
+            color: #721c24;
+            margin: 0;
+        }
+
+        /* Success Boxes */
+        .success-box {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            border-left: 5px solid #28a745;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 5px;
+        }
+
+        .success-box h4 {
+            color: #155724;
+            margin-bottom: 0.5rem;
+        }
+
+        .success-box p {
+            color: #155724;
+            margin: 0;
+        }
+
+        /* Prevention Tips */
+        .prevention-tips {
+            background: #0066cc;
+            color: white;
+            padding: 2rem;
+            border-radius: 10px;
+            margin: 2rem 0;
+        }
+
+        .prevention-tips h3 {
+            color: white;
+            margin-bottom: 1rem;
+        }
+
+        .prevention-tips ul {
+            list-style: none;
+            margin-left: 0;
+        }
+
+        .prevention-tips li {
+            color: white;
+            margin-bottom: 0.5rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .prevention-tips li::before {
+            content: "☀️";
+            position: absolute;
+            left: 0;
+        }
+
+        /* Navigation Buttons */
+        .topic-navigation {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 3rem;
+            padding: 2rem;
+            background: #f8f9fa;
+            border-radius: 10px;
+        }
+
+        .nav-button {
+            display: inline-block;
+            background: #dc3545;
+            color: white;
+            padding: 0.8rem 1.5rem;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .nav-button:hover {
+            background: #c82333;
+            transform: translateY(-2px);
+        }
+
+        .nav-button.secondary {
+            background: #6c757d;
+        }
+
+        .nav-button.secondary:hover {
+            background: #5a6268;
+        }
+
+        /* Footer */
+        footer {
+            background: #333333;
+            color: white;
+            text-align: center;
+            padding: 3rem 2rem;
+            margin-top: 4rem;
+        }
+
+        footer p {
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+        }
+
+        footer .emergency-notice {
+            background: #dc3545;
+            color: white;
+            padding: 1rem;
+            border-radius: 10px;
+            margin-top: 2rem;
+            font-weight: 600;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .topic-header h1 {
+                font-size: 2rem;
+            }
+
+            .step {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .step-number {
+                margin-bottom: 1rem;
+                margin-right: 0;
+            }
+
+            .topic-navigation {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .comparison-table {
+                overflow-x: auto;
+            }
+
+            nav {
+                padding: 1rem;
+            }
+
+            main {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">Beat by Beat</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="topics.html">All Topics</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <nav class="breadcrumb">
+            <a href="index.html">Home</a> > <a href="topics.html">All Topics</a> > Heatstroke
+        </nav>
+
+        <section class="topic-header">
+            <h1>Heatstroke</h1>
+            <p>Recognizing and treating dangerous heat-related emergencies</p>
+        </section>
+
+        <div class="emergency-alert">
+            <h2>🚨 Medical Emergency</h2>
+            <p>Heatstroke is a life-threatening condition. Call 911 immediately if you suspect heatstroke</p>
+        </div>
+
+        <section class="content-section">
+            <h2>What is Heatstroke?</h2>
+            <p>Heatstroke is a severe heat-related illness that occurs when the body's temperature regulation system fails. The body temperature rises to dangerous levels (104°F/40°C or higher) and the person stops sweating, making it impossible to cool down naturally.</p>
+            
+            <p>Heatstroke is a medical emergency that can cause permanent damage to the brain, heart, kidneys, and muscles if not treated immediately. It can be fatal if left untreated.</p>
+
+            <div class="danger-box">
+                <h4>Life-Threatening Condition</h4>
+                <p>Heatstroke can kill or cause permanent disability. Time is critical - every minute counts in getting treatment.</p>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>Heat Exhaustion vs. Heatstroke</h2>
+            <p>Understanding the difference between heat exhaustion and heatstroke is crucial for proper treatment:</p>
+            
+            <div class="comparison-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Symptom</th>
+                            <th>Heat Exhaustion</th>
+                            <th>Heatstroke</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>Body Temperature</strong></td>
+                            <td>Normal to slightly elevated</td>
+                            <td>Very high (104°F/40°C or higher)</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Sweating</strong></td>
+                            <td>Heavy sweating</td>
+                            <td>Little to no sweating</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Skin</strong></td>
+                            <td>Cool, moist, pale</td>
+                            <td>Hot, dry, red</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Mental State</strong></td>
+                            <td>Alert but may feel weak</td>
+                            <td>Confused, altered consciousness</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Pulse</strong></td>
+                            <td>Fast and weak</td>
+                            <td>Fast and strong</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Emergency Level</strong></td>
+                            <td>Serious but treatable</td>
+                            <td>Life-threatening emergency</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>When to Suspect Heatstroke</h2>
+            <p>Heatstroke typically occurs in these situations:</p>
+            
+            <h3>High-Risk Conditions</h3>
+            <ul>
+                <li>High temperature (over 90°F/32°C) with high humidity</li>
+                <li>Prolonged sun exposure or physical activity in heat</li>
+                <li>Being trapped in a hot car or building</li>
+                <li>Wearing heavy clothing in hot weather</li>
+                <li>Dehydration combined with heat exposure</li>
+            </ul>
+
+            <h3>High-Risk Individuals</h3>
+            <ul>
+                <li>Infants and children under 4</li>
+                <li>Adults over 65</li>
+                <li>People with chronic medical conditions</li>
+                <li>Those taking certain medications</li>
+                <li>Athletes or outdoor workers</li>
+                <li>People with substance abuse problems</li>
+            </ul>
+
+            <h3>Warning Signs of Heatstroke</h3>
+            <ul>
+                <li><strong>High body temperature</strong> (104°F/40°C or higher)</li>
+                <li><strong>Altered mental state</strong> - confusion, agitation, slurred speech</li>
+                <li><strong>Hot, dry skin</strong> - red and lacking sweat</li>
+                <li><strong>Rapid, strong pulse</strong></li>
+                <li><strong>Nausea and vomiting</strong></li>
+                <li><strong>Headache</strong></li>
+                <li><strong>Dizziness or fainting</strong></li>
+                <li><strong>Seizures</strong> (in severe cases)</li>
+            </ul>
+        </section>
+
+        <section class="content-section">
+            <h2>Step-by-Step Treatment</h2>
+            <div class="step-guide">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>Call 911 Immediately</h3>
+                        <p>Heatstroke is a medical emergency. Call for emergency medical help right away.</p>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>Move to Cool Area</h3>
+                        <p>Get the person to a cool, shaded, or air-conditioned area immediately. Remove from heat source.</p>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>Remove Excess Clothing</h3>
+                        <p>Take off unnecessary clothing to help heat escape from the body.</p>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>Cool the Body Rapidly</h3>
+                        <p>Use whatever cooling methods available: cold water, ice packs to neck/armpits/groin, wet towels, or fans.</p>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                        <h3>Monitor Vital Signs</h3>
+                        <p>Check breathing, pulse, and consciousness. Be prepared to perform CPR if needed.</p>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">6</div>
+                    <div class="step-content">
+                        <h3>Position Properly</h3>
+                        <p>If conscious, have them lie down with legs elevated. If unconscious, place in recovery position.</p>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-number">7</div>
+                    <div class="step-content">
+                        <h3>Continue Cooling</h3>
+                        <p>Keep cooling until body temperature drops below 102°F/39°C or until emergency services arrive.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>Cooling Methods</h2>
+            <h3>Most Effective Methods</h3>
+            <ul>
+                <li><strong>Cold water immersion</strong> - If available, immerse in cold water bath</li>
+                <li><strong>Ice packs</strong> - Apply to neck, armpits, and groin (major pulse points)</li>
+                <li><strong>Wet towels</strong> - Apply cool, wet towels to skin and replace frequently</li>
+                <li><strong>Fans</strong> - Use fans to increase evaporation while applying water</li>
+            </ul>
+
+            <h3>Additional Cooling Techniques</h3>
+            <ul>
+                <li>Spray with cool water from garden hose or spray bottle</li>
+                <li>Use frozen vegetables as ice packs if no ice available</li>
+                <li>Remove to air-conditioned vehicle or building</li>
+                <li>Apply cold, wet sheets to the body</li>
+            </ul>
+
+            <div class="warning-box">
+                <h4>Cooling Caution</h4>
+                <p>Avoid giving fluids if the person is unconscious, vomiting, or has altered mental status. This can cause choking.</p>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>What NOT to Do</h2>
+            <ul>
+                <li><strong>Don't give fluids</strong> if person is unconscious or vomiting</li>
+                <li><strong>Don't give alcohol</strong> - it increases dehydration</li>
+                <li><strong>Don't give caffeine</strong> - it can worsen dehydration</li>
+                <li><strong>Don't use ice directly on skin</strong> - wrap in cloth first</li>
+                <li><strong>Don't cool too rapidly</strong> - can cause shivering and increase heat production</li>
+                <li><strong>Don't leave person alone</strong> - condition can worsen rapidly</li>
+            </ul>
+
+            <div class="danger-box">
+                <h4>Common Mistake</h4>
+                <p>Never assume the person is "just tired" or "sleeping it off." Heatstroke can cause unconsciousness and requires immediate medical attention.</p>
+            </div>
+        </section>
+
+        <div class="prevention-tips">
+            <h3>Prevention Tips</h3>
+            <ul>
+                <li>Stay hydrated - drink water regularly, even if not thirsty</li>
+                <li>Wear light-colored, loose-fitting clothing</li>
+                <li>Avoid outdoor activities during peak heat hours (10am-4pm)</li>
+                <li>Take frequent breaks in shade or air conditioning</li>
+                <li>Never leave anyone in a parked car</li>
+                <li>Acclimatize gradually to hot weather</li>
+                <li>Know your medications - some increase heat sensitivity</li>
+                <li>Check on elderly neighbors and relatives during heat waves</li>
+            </ul>
+        </div>
+
+        <section class="content-section">
+            <h2>After Treatment</h2>
+            <p>Even after cooling treatment:</p>
+            <ul>
+                <li><strong>Hospitalization is usually required</strong> for monitoring and additional treatment</li>
+                <li><strong>Complications can develop</strong> hours or days later</li>
+                <li><strong>Follow-up care is essential</strong> - heatstroke can cause lasting damage</li>
+                <li><strong>Increased sensitivity</strong> to heat may persist for weeks</li>
+            </ul>
+
+            <div class="success-box">
+                <h4>Recovery</h4>
+                <p>With prompt treatment, most people recover from heatstroke. However, the faster treatment begins, the better the outcome.</p>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>Important Notes</h2>
+            <h3>Risk Factors</h3>
+            <p>Certain factors increase heatstroke risk:</p>
+            <ul>
+                <li>Heart disease, diabetes, kidney disease</li>
+                <li>Medications (diuretics, antihistamines, beta-blockers)</li>
+                <li>Alcohol or drug use</li>
+                <li>Previous heat-related illness</li>
+                <li>Obesity</li>
+                <li>Sudden exposure to hot weather</li>
+            </ul>
+
+            <h3>Recognition is Key</h3>
+            <p>The most important skill is recognizing heatstroke early. The combination of high body temperature, altered mental state, and hot, dry skin should trigger immediate emergency response.</p>
+
+            <div class="warning-box">
+                <h4>Time-Sensitive Emergency</h4>
+                <p>Heatstroke becomes more dangerous the longer it goes untreated. Every minute of delay can mean the difference between recovery and permanent damage.</p>
+            </div>
+        </section>
+
+        <div class="topic-navigation">
+            <a href="topics.html" class="nav-button secondary">← Back to Topics</a>
+            <a href="allergic-reactions.html" class="nav-button">Next: Allergic Reactions →</a>
+        </div>
+    </main>
+
+    <footer>
+        <p><strong>Knowledge saves lives. Learn first aid. Beat by beat.</strong></p>
+        <p>&copy; 2024 Beat by Beat - A nonprofit first aid education platform</p>
+        <div class="emergency-notice">
+            <p>🚨 IN A REAL EMERGENCY: Call 911 (US) or your local emergency number immediately</p>
+        </div>
+    </footer>
+</body>
+</html>

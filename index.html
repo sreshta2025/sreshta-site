@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beat by Beat - First Aid Education | Saving Lives One Beat at a Time</title>
+    <meta name="description" content="Beat by Beat is a nonprofit first aid education platform empowering everyday people to act quickly and confidently in emergencies. Learn life-saving skills step by step.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.6;
+            color: #333333;
+            background-color: #ffffff;
+        }
+
+        /* Header and Navigation */
+        header {
+            background: #ffffff;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #dc3545;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+        }
+
+        .logo::after {
+            content: "⚡";
+            margin-left: 0.5rem;
+            font-size: 1.2rem;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #333333;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #dc3545;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #dc3545 0%, #e53e3e 100%);
+            color: white;
+            text-align: center;
+            padding: 4rem 2rem;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .hero .tagline {
+            font-size: 1.5rem;
+            font-weight: 300;
+            margin-bottom: 2rem;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: #ffffff;
+            color: #dc3545;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+        }
+
+        /* Mission Section */
+        .mission {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        .mission h2 {
+            font-size: 2.5rem;
+            margin-bottom: 2rem;
+            color: #333333;
+        }
+
+        .mission p {
+            font-size: 1.2rem;
+            line-height: 1.8;
+            color: #6c757d;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Featured Topics Grid */
+        .featured-topics {
+            background: #f8f9fa;
+            padding: 4rem 2rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .featured-topics h2 {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 3rem;
+            color: #333333;
+        }
+
+        .topics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .topic-card {
+            background: white;
+            border-radius: 15px;
+            padding: 2rem;
+            text-align: center;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .topic-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+
+        .topic-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .topic-card h3 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: #dc3545;
+        }
+
+        .topic-card p {
+            color: #6c757d;
+            line-height: 1.6;
+        }
+
+        .view-all-topics {
+            text-align: center;
+        }
+
+        .view-all-topics a {
+            display: inline-block;
+            background: #0066cc;
+            color: white;
+            padding: 1rem 2rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .view-all-topics a:hover {
+            background: #0052a3;
+            transform: translateY(-2px);
+        }
+
+        /* Footer */
+        footer {
+            background: #333333;
+            color: white;
+            text-align: center;
+            padding: 3rem 2rem;
+        }
+
+        footer p {
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+        }
+
+        footer .emergency-notice {
+            background: #dc3545;
+            color: white;
+            padding: 1rem;
+            border-radius: 10px;
+            margin-top: 2rem;
+            font-weight: 600;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .hero .tagline {
+                font-size: 1.2rem;
+            }
+
+            .mission h2,
+            .featured-topics h2 {
+                font-size: 2rem;
+            }
+
+            .topics-grid {
+                grid-template-columns: 1fr;
+            }
+
+            nav {
+                padding: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">Beat by Beat</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="topics.html">All Topics</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h1>Beat by Beat</h1>
+            <p class="tagline">Saving lives, one beat at a time</p>
+            <a href="topics.html" class="cta-button">Start Learning</a>
+        </section>
+
+        <section class="mission">
+            <h2>Our Mission</h2>
+            <p>Beat by Beat is a nonprofit first aid education platform created to empower everyday people to act quickly and confidently in emergencies. Our step-by-step guides and printable resources are designed for anyone — at home, school, or on the go.</p>
+        </section>
+
+        <section class="featured-topics">
+            <div class="container">
+                <h2>Featured Topics</h2>
+                <div class="topics-grid">
+                    <a href="what-is-first-aid.html" class="topic-card">
+                        <div class="topic-icon">🏥</div>
+                        <h3>What is First Aid?</h3>
+                        <p>Learn the basics of first aid and when to use these life-saving skills.</p>
+                    </a>
+                    
+                    <a href="cpr-adults.html" class="topic-card">
+                        <div class="topic-icon">❤️</div>
+                        <h3>CPR for Adults</h3>
+                        <p>Master the essential technique of cardiopulmonary resuscitation for adult victims.</p>
+                    </a>
+                    
+                    <a href="first-aid-kit.html" class="topic-card">
+                        <div class="topic-icon">🧰</div>
+                        <h3>First Aid Kit Essentials</h3>
+                        <p>Build the perfect first aid kit for your home, car, and workplace.</p>
+                    </a>
+                    
+                    <a href="heatstroke.html" class="topic-card">
+                        <div class="topic-icon">🌡️</div>
+                        <h3>Heatstroke</h3>
+                        <p>Recognize and respond to heat-related emergencies before they become life-threatening.</p>
+                    </a>
+                    
+                    <a href="allergic-reactions.html" class="topic-card">
+                        <div class="topic-icon">⚠️</div>
+                        <h3>Allergic Reactions</h3>
+                        <p>Identify severe allergic reactions and provide immediate care.</p>
+                    </a>
+                    
+                    <a href="bleeding-wounds.html" class="topic-card">
+                        <div class="topic-icon">🩹</div>
+                        <h3>Bleeding & Wounds</h3>
+                        <p>Control bleeding and properly care for different types of wounds.</p>
+                    </a>
+                </div>
+                
+                <div class="view-all-topics">
+                    <a href="topics.html">View All Topics</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p><strong>Knowledge saves lives. Learn first aid. Beat by beat.</strong></p>
+        <p>&copy; 2024 Beat by Beat - A nonprofit first aid education platform</p>
+        <div class="emergency-notice">
+            <p>🚨 IN A REAL EMERGENCY: Call 911 (US) or your local emergency number immediately</p>
+        </div>
+    </footer>
+</body>
+</html>
