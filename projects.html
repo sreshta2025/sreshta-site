@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects - Sreshta Nallamothu</title>
+    <meta name="description" content="Check out what I'm working on right now - from creative projects to coding adventures!">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌸</text></svg>">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <span class="brand-flower">🌸</span>
+                <span class="brand-text">Sreshta Nallamothu</span>
+            </div>
+            
+            <div class="nav-menu" id="navMenu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="projects.html" class="nav-link active">Projects</a>
+                <a href="interests.html" class="nav-link">Interests</a>
+                <a href="journey.html" class="nav-link">Journey</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+
+            <div class="nav-controls">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                    <span class="theme-icon">🌙</span>
+                </button>
+                <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle mobile menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content page-content">
+        <!-- Projects Section -->
+        <section class="section projects-section" id="projects">
+            <div class="floating-elements">
+                <div class="floating-element" style="top: 15%; left: 5%;">🎨</div>
+                <div class="floating-element" style="top: 70%; right: 10%;">💻</div>
+                <div class="floating-element" style="top: 40%; left: 85%;">✨</div>
+                <div class="floating-element" style="top: 80%; left: 15%;">🚀</div>
+            </div>
+            
+            <div class="container">
+                <div class="section-header">
+                    <h1 class="section-title">My Projects</h1>
+                    <p class="section-subtitle">
+                        Check out what I'm working on right now - from creative projects to coding adventures!
+                    </p>
+                </div>
+                
+                <div class="projects-grid">
+                    <div class="project-card featured" data-project="beat-by-beat">
+                        <div class="project-image">
+                            <div class="project-placeholder">
+                                <div class="project-overlay">
+                                    <button class="view-project-btn">View Project</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <div class="project-badge">Featured</div>
+                            <h3>Beat by Beat</h3>
+                            <p>An interactive music visualization project that brings rhythm to life through code and creativity. This is my most ambitious project yet!</p>
+                            <div class="project-tags">
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">Web Audio API</span>
+                                <span class="tag">Creative Coding</span>
+                                <span class="tag">Music</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card" data-project="portfolio">
+                        <div class="project-image">
+                            <div class="project-placeholder">
+                                <div class="project-overlay">
+                                    <button class="view-project-btn">View Project</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>This Portfolio Website</h3>
+                            <p>My personal website built from scratch to showcase my journey and projects. A labor of love and learning!</p>
+                            <div class="project-tags">
+                                <span class="tag">HTML/CSS</span>
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">Design</span>
+                                <span class="tag">UX/UI</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card" data-project="color-palette">
+                        <div class="project-image">
+                            <div class="project-placeholder">
+                                <div class="project-overlay">
+                                    <button class="view-project-btn">View Project</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Color Palette Generator</h3>
+                            <p>A web app that generates beautiful color palettes for designers and artists. Born from my love of colors!</p>
+                            <div class="project-tags">
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">Color Theory</span>
+                                <span class="tag">Design Tools</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card" data-project="learning-tracker">
+                        <div class="project-image">
+                            <div class="project-placeholder">
+                                <div class="project-overlay">
+                                    <button class="view-project-btn">View Project</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Learning Progress Tracker</h3>
+                            <p>A personal dashboard to track my learning goals and progress throughout high school. Keeping myself accountable!</p>
+                            <div class="project-tags">
+                                <span class="tag">Planning</span>
+                                <span class="tag">Productivity</span>
+                                <span class="tag">Goals</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card coming-soon">
+                        <div class="project-image">
+                            <div class="project-placeholder">
+                                <div class="project-overlay">
+                                    <div class="coming-soon-text">Coming Soon</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Next Adventure</h3>
+                            <p>Something exciting is brewing! I'm always working on new ideas and projects. Stay tuned for updates!</p>
+                            <div class="project-tags">
+                                <span class="tag">Mystery</span>
+                                <span class="tag">Innovation</span>
+                                <span class="tag">Creativity</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="project-card coming-soon">
+                        <div class="project-image">
+                            <div class="project-placeholder">
+                                <div class="project-overlay">
+                                    <div class="coming-soon-text">Coming Soon</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Future Project</h3>
+                            <p>I have so many ideas and dreams! Each project teaches me something new and brings me closer to my goals.</p>
+                            <div class="project-tags">
+                                <span class="tag">Dreams</span>
+                                <span class="tag">Learning</span>
+                                <span class="tag">Growth</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project Philosophy Section -->
+                <div class="project-philosophy">
+                    <div class="philosophy-card">
+                        <div class="philosophy-icon">💭</div>
+                        <h2>My Project Philosophy</h2>
+                        <p>
+                            Every project I work on teaches me something new about coding, design, and problem-solving. 
+                            I believe in learning by doing, and each project - whether big or small - is a step forward 
+                            in my journey as a creator and developer.
+                        </p>
+                        <p>
+                            I try to choose projects that excite me and challenge me to grow. Sometimes they're inspired 
+                            by problems I want to solve, sometimes by cool technologies I want to learn, and sometimes 
+                            just by pure curiosity about "what would happen if..."
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    © 2025 Sreshta Nallamothu | Building my future, one step at a time. 🌱
+                </div>
+                <p class="footer-text">
+                    Made with 💖 and lots of ☕
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Project Modal -->
+    <div class="modal-overlay" id="projectModal">
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose">&times;</button>
+            <div class="modal-body" id="modalBody">
+                <!-- Dynamic content will be inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

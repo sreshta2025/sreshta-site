@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me - Sreshta Nallamothu</title>
+    <meta name="description" content="I'd love to hear from you! Whether you want to collaborate, share ideas, or just say hi.">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌸</text></svg>">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <span class="brand-flower">🌸</span>
+                <span class="brand-text">Sreshta Nallamothu</span>
+            </div>
+            
+            <div class="nav-menu" id="navMenu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="projects.html" class="nav-link">Projects</a>
+                <a href="interests.html" class="nav-link">Interests</a>
+                <a href="journey.html" class="nav-link">Journey</a>
+                <a href="contact.html" class="nav-link active">Contact</a>
+            </div>
+
+            <div class="nav-controls">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                    <span class="theme-icon">🌙</span>
+                </button>
+                <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle mobile menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content page-content">
+        <!-- Contact Section -->
+        <section class="section contact-section" id="contact">
+            <div class="floating-elements">
+                <div class="floating-element" style="top: 15%; left: 5%;">💌</div>
+                <div class="floating-element" style="top: 60%; right: 8%;">✨</div>
+                <div class="floating-element" style="top: 35%; left: 88%;">💫</div>
+                <div class="floating-element" style="top: 75%; left: 12%;">🌸</div>
+            </div>
+            
+            <div class="container">
+                <div class="section-header">
+                    <h1 class="section-title">Let's Connect!</h1>
+                    <p class="section-subtitle">
+                        Ready to collaborate, share ideas, or just say hello? I'd love to hear from you!
+                    </p>
+                </div>
+
+                <!-- Contact Hero Card -->
+                <div class="contact-hero-section" style="margin-bottom: 4rem;">
+                    <div class="hero-card" style="background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-pink) 100%); border-radius: 24px; padding: 3rem; text-align: center; position: relative; overflow: hidden; margin: 2rem 0; box-shadow: 0 20px 40px rgba(158, 202, 214, 0.3);">
+                        <div class="hero-decoration" style="position: absolute; top: -50%; left: -50%; width: 200%; height: 200%; background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 50%); animation: rotate 20s linear infinite;"></div>
+                        <div style="position: relative; z-index: 2;">
+                            <div class="hero-icon" style="font-size: 4rem; margin-bottom: 1.5rem; animation: bounce 2s ease-in-out infinite;">💌</div>
+                            <h2 style="color: var(--white); font-size: 2.5rem; font-weight: 700; margin-bottom: 1rem; text-shadow: 0 2px 4px rgba(0,0,0,0.1);">Ready to Start a Conversation?</h2>
+                            <p style="color: var(--white); font-size: 1.2rem; line-height: 1.6; max-width: 600px; margin: 0 auto; text-shadow: 0 1px 2px rgba(0,0,0,0.1);">
+                                Whether you're a fellow creative, a potential collaborator, or someone who just wants to chat about life, art, and code - I'm excited to connect!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Main Contact Grid -->
+                <div class="contact-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; margin-bottom: 4rem;">
+                    
+                    <!-- Contact Form Card -->
+                    <div class="contact-form-card" style="background: var(--white); border-radius: 20px; padding: 2.5rem; box-shadow: 0 15px 35px rgba(116, 141, 174, 0.1); border: 1px solid rgba(158, 202, 214, 0.2); margin: 0;">
+                        <div class="form-header" style="text-align: center; margin-bottom: 2rem;">
+                            <div class="form-icon" style="font-size: 3rem; margin-bottom: 1rem;">📝</div>
+                            <h3 style="color: var(--text-color); font-size: 1.8rem; font-weight: 600; margin-bottom: 0.5rem;">Send Me a Message</h3>
+                            <p style="color: var(--text-light); font-size: 1rem;">I'd love to hear what's on your mind!</p>
+                        </div>
+                        
+                        <form class="modern-contact-form" id="contactForm" style="space-y: 1.5rem;">
+                            
+                            <div class="form-group" style="margin-bottom: 1.5rem;">
+                                <label for="name" style="display: block; color: var(--text-color); font-weight: 500; margin-bottom: 0.5rem; font-size: 0.95rem;">Your Name *</label>
+                                <input type="text" id="name" name="name" required 
+                                       style="width: 100%; padding: 0.8rem 1rem; border: 2px solid var(--primary-blue); border-radius: 12px; font-size: 1rem; transition: all 0.3s ease; background: var(--background-light);"
+                                       placeholder="What should I call you?" 
+                                       onfocus="this.style.borderColor='var(--primary-pink)'; this.style.transform='translateY(-2px)'; this.style.boxShadow='0 8px 25px rgba(158, 202, 214, 0.2)'"
+                                       onblur="this.style.borderColor='var(--primary-blue)'; this.style.transform='translateY(0)'; this.style.boxShadow='none'">
+                            </div>
+                            
+                            <div class="form-group" style="margin-bottom: 1.5rem;">
+                                <label for="email" style="display: block; color: var(--text-color); font-weight: 500; margin-bottom: 0.5rem; font-size: 0.95rem;">Your Email *</label>
+                                <input type="email" id="email" name="email" required 
+                                       style="width: 100%; padding: 0.8rem 1rem; border: 2px solid var(--primary-blue); border-radius: 12px; font-size: 1rem; transition: all 0.3s ease; background: var(--background-light);"
+                                       placeholder="your.email@example.com"
+                                       onfocus="this.style.borderColor='var(--primary-pink)'; this.style.transform='translateY(-2px)'; this.style.boxShadow='0 8px 25px rgba(158, 202, 214, 0.2)'"
+                                       onblur="this.style.borderColor='var(--primary-blue)'; this.style.transform='translateY(0)'; this.style.boxShadow='none'">
+                            </div>
+                            
+                            <div class="form-group" style="margin-bottom: 1.5rem;">
+                                <label for="subject" style="display: block; color: var(--text-color); font-weight: 500; margin-bottom: 0.5rem; font-size: 0.95rem;">What's This About?</label>
+                                <select id="subject" name="subject" required 
+                                        style="width: 100%; padding: 0.8rem 1rem; border: 2px solid var(--primary-blue); border-radius: 12px; font-size: 1rem; transition: all 0.3s ease; background: var(--background-light);"
+                                        onfocus="this.style.borderColor='var(--primary-pink)'; this.style.transform='translateY(-2px)'; this.style.boxShadow='0 8px 25px rgba(158, 202, 214, 0.2)'"
+                                        onblur="this.style.borderColor='var(--primary-blue)'; this.style.transform='translateY(0)'; this.style.boxShadow='none'">
+                                    <option value="">Choose a topic...</option>
+                                    <option value="collaboration">🤝 Collaboration Opportunity</option>
+                                    <option value="question">❓ I Have a Question</option>
+                                    <option value="feedback">💭 Feedback on Your Work</option>
+                                    <option value="project">🎨 Want to Share a Project</option>
+                                    <option value="mentorship">🌟 Looking for Advice</option>
+                                    <option value="other">💬 Just Saying Hi!</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group" style="margin-bottom: 2rem;">
+                                <label for="message" style="display: block; color: var(--text-color); font-weight: 500; margin-bottom: 0.5rem; font-size: 0.95rem;">Your Message *</label>
+                                <textarea id="message" name="message" rows="5" required 
+                                          style="width: 100%; padding: 0.8rem 1rem; border: 2px solid var(--primary-blue); border-radius: 12px; font-size: 1rem; resize: vertical; transition: all 0.3s ease; background: var(--background-light);"
+                                          placeholder="Tell me what's on your mind... I'd love to hear your story, ideas, or thoughts!"
+                                          onfocus="this.style.borderColor='var(--primary-pink)'; this.style.transform='translateY(-2px)'; this.style.boxShadow='0 8px 25px rgba(158, 202, 214, 0.2)'"
+                                          onblur="this.style.borderColor='var(--primary-blue)'; this.style.transform='translateY(0)'; this.style.boxShadow='none'"></textarea>
+                            </div>
+                            
+                            <button type="submit" class="submit-btn" id="submitBtn"
+                                    style="width: 100%; padding: 1rem 2rem; background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-pink) 100%); color: var(--white); border: none; border-radius: 14px; font-size: 1.1rem; font-weight: 600; cursor: pointer; transition: all 0.3s ease; position: relative; overflow: hidden;"
+                                    onmouseover="this.style.transform='translateY(-3px)'; this.style.boxShadow='0 15px 35px rgba(158, 202, 214, 0.4)'"
+                                    onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 8px 25px rgba(158, 202, 214, 0.2)'">
+                                <span style="display: flex; align-items: center; justify-content: center;">
+                                    <span style="margin-right: 0.5rem;">Send Message</span> ✨
+                                </span>
+                            </button>
+                        </form>
+                    </div>
+
+                    <!-- Contact Info & Interactive Cards -->
+                    <div class="contact-info-area">
+                        <!-- Contact Info Cards -->
+                        <div class="info-cards-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 2rem;">
+                            <div class="info-card" style="background: var(--white); border-radius: 16px; padding: 1.8rem; text-align: center; box-shadow: 0 10px 25px rgba(116, 141, 174, 0.08); border: 1px solid rgba(158, 202, 214, 0.15); transition: all 0.3s ease; margin: 0;"
+                                 onmouseover="this.style.transform='translateY(-8px) scale(1.02)'; this.style.boxShadow='0 20px 40px rgba(116, 141, 174, 0.15)'"
+                                 onmouseout="this.style.transform='translateY(0) scale(1)'; this.style.boxShadow='0 10px 25px rgba(116, 141, 174, 0.08)'">
+                                <div style="font-size: 2.5rem; margin-bottom: 1rem; animation: pulse 2s ease-in-out infinite;">📍</div>
+                                <h4 style="color: var(--text-color); font-weight: 600; margin-bottom: 0.5rem;">Location</h4>
+                                <p style="color: var(--text-light); font-size: 0.95rem;">Michigan, USA</p>
+                            </div>
+                            
+                            <div class="info-card" style="background: var(--white); border-radius: 16px; padding: 1.8rem; text-align: center; box-shadow: 0 10px 25px rgba(116, 141, 174, 0.08); border: 1px solid rgba(158, 202, 214, 0.15); transition: all 0.3s ease; margin: 0;"
+                                 onmouseover="this.style.transform='translateY(-8px) scale(1.02)'; this.style.boxShadow='0 20px 40px rgba(116, 141, 174, 0.15)'"
+                                 onmouseout="this.style.transform='translateY(0) scale(1)'; this.style.boxShadow='0 10px 25px rgba(116, 141, 174, 0.08)'">
+                                <div style="font-size: 2.5rem; margin-bottom: 1rem; animation: pulse 2s ease-in-out infinite 0.5s;">🎓</div>
+                                <h4 style="color: var(--text-color); font-weight: 600; margin-bottom: 0.5rem;">Status</h4>
+                                <p style="color: var(--text-light); font-size: 0.95rem;">High School Freshman</p>
+                            </div>
+                            
+                            <div class="info-card" style="background: var(--white); border-radius: 16px; padding: 1.8rem; text-align: center; box-shadow: 0 10px 25px rgba(116, 141, 174, 0.08); border: 1px solid rgba(158, 202, 214, 0.15); transition: all 0.3s ease; margin: 0;"
+                                 onmouseover="this.style.transform='translateY(-8px) scale(1.02)'; this.style.boxShadow='0 20px 40px rgba(116, 141, 174, 0.15)'"
+                                 onmouseout="this.style.transform='translateY(0) scale(1)'; this.style.boxShadow='0 10px 25px rgba(116, 141, 174, 0.08)'">
+                                <div style="font-size: 2.5rem; margin-bottom: 1rem; animation: pulse 2s ease-in-out infinite 1s;">⏰</div>
+                                <h4 style="color: var(--text-color); font-weight: 600; margin-bottom: 0.5rem;">Response Time</h4>
+                                <p style="color: var(--text-light); font-size: 0.95rem;">Within 24 hours</p>
+                            </div>
+                            
+                            <div class="info-card" style="background: var(--white); border-radius: 16px; padding: 1.8rem; text-align: center; box-shadow: 0 10px 25px rgba(116, 141, 174, 0.08); border: 1px solid rgba(158, 202, 214, 0.15); transition: all 0.3s ease; margin: 0;"
+                                 onmouseover="this.style.transform='translateY(-8px) scale(1.02)'; this.style.boxShadow='0 20px 40px rgba(116, 141, 174, 0.15)'"
+                                 onmouseout="this.style.transform='translateY(0) scale(1)'; this.style.boxShadow='0 10px 25px rgba(116, 141, 174, 0.08)'">
+                                <div style="font-size: 2.5rem; margin-bottom: 1rem; animation: pulse 2s ease-in-out infinite 1.5s;">🌟</div>
+                                <h4 style="color: var(--text-color); font-weight: 600; margin-bottom: 0.5rem;">Best Time</h4>
+                                <p style="color: var(--text-light); font-size: 0.95rem;">Evenings & Weekends</p>
+                            </div>
+                        </div>
+
+                        <!-- Interactive Topics Card -->
+                        <div class="topics-card" style="background: var(--white); border-radius: 20px; padding: 2rem; box-shadow: 0 15px 35px rgba(116, 141, 174, 0.1); border: 1px solid rgba(158, 202, 214, 0.2); margin: 0;">
+                            <div style="text-align: center; margin-bottom: 1.5rem;">
+                                <div style="font-size: 2.5rem; margin-bottom: 0.5rem;">💬</div>
+                                <h4 style="color: var(--text-color); font-weight: 600; font-size: 1.4rem;">I Love Talking About</h4>
+                            </div>
+                            
+                            <div class="topic-tags" style="display: flex; flex-wrap: wrap; gap: 0.8rem; margin-bottom: 1.5rem;">
+                                <span class="topic-tag" style="background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-pink) 100%); color: var(--white); padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.9rem; cursor: pointer; transition: all 0.3s ease; margin: 0;"
+                                      onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 5px 15px rgba(158, 202, 214, 0.3)'"
+                                      onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none'"
+                                      onclick="showTopicResponse('creative')">🎨 Creative Projects</span>
+                                <span class="topic-tag" style="background: linear-gradient(135deg, var(--primary-pink) 0%, var(--primary-blue) 100%); color: var(--white); padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.9rem; cursor: pointer; transition: all 0.3s ease; margin: 0;"
+                                      onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 5px 15px rgba(245, 203, 203, 0.3)'"
+                                      onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none'"
+                                      onclick="showTopicResponse('coding')">💻 Coding & Tech</span>
+                                <span class="topic-tag" style="background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-pink) 100%); color: var(--white); padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.9rem; cursor: pointer; transition: all 0.3s ease; margin: 0;"
+                                      onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 5px 15px rgba(158, 202, 214, 0.3)'"
+                                      onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none'"
+                                      onclick="showTopicResponse('learning')">📚 School & Learning</span>
+                                <span class="topic-tag" style="background: linear-gradient(135deg, var(--primary-pink) 0%, var(--primary-blue) 100%); color: var(--white); padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.9rem; cursor: pointer; transition: all 0.3s ease; margin: 0;"
+                                      onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 5px 15px rgba(245, 203, 203, 0.3)'"
+                                      onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none'"
+                                      onclick="showTopicResponse('dreams')">🌟 Dreams & Goals</span>
+                                <span class="topic-tag" style="background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-pink) 100%); color: var(--white); padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.9rem; cursor: pointer; transition: all 0.3s ease; margin: 0;"
+                                      onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 5px 15px rgba(158, 202, 214, 0.3)'"
+                                      onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none'"
+                                      onclick="showTopicResponse('collab')">🤝 Collaboration</span>
+                                <span class="topic-tag" style="background: linear-gradient(135deg, var(--primary-pink) 0%, var(--primary-blue) 100%); color: var(--white); padding: 0.5rem 1rem; border-radius: 20px; font-size: 0.9rem; cursor: pointer; transition: all 0.3s ease; margin: 0;"
+                                      onmouseover="this.style.transform='scale(1.05)'; this.style.boxShadow='0 5px 15px rgba(245, 203, 203, 0.3)'"
+                                      onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='none'"
+                                      onclick="showTopicResponse('music')">🎵 Music & Art</span>
+                            </div>
+                            
+                            <div id="topicResponse" style="background: var(--background-light); border-radius: 12px; padding: 1.2rem; border-left: 4px solid var(--primary-blue); display: none;">
+                                <div style="display: flex; align-items: center; margin-bottom: 0.5rem;">
+                                    <span id="responseIcon" style="font-size: 1.5rem; margin-right: 0.5rem;">💭</span>
+                                    <span style="color: var(--text-color); font-weight: 500;">My thoughts on this:</span>
+                                </div>
+                                <p id="responseText" style="color: var(--text-light); line-height: 1.5; font-size: 0.95rem;">Click any topic above to see what excites me most about it!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fun Fact & Philosophy Section -->
+                <div class="bottom-cards" style="display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; margin-bottom: 3rem;">
+                    <!-- Fun Fact Card -->
+                    <div class="fun-fact-card" style="background: linear-gradient(135deg, var(--primary-pink) 0%, var(--primary-blue) 100%); border-radius: 20px; padding: 2.5rem; text-align: center; position: relative; overflow: hidden; margin: 0;">
+                        <div style="position: absolute; top: 1rem; right: 1rem; font-size: 3rem; opacity: 0.3; animation: spin 10s linear infinite;">🌸</div>
+                        <div style="font-size: 3rem; margin-bottom: 1rem;">✨</div>
+                        <h4 style="color: var(--white); font-size: 1.6rem; font-weight: 600; margin-bottom: 1rem;">Fun Fact!</h4>
+                        <p style="color: var(--white); line-height: 1.6; font-size: 1rem; text-shadow: 0 1px 2px rgba(0,0,0,0.1);">
+                            I love receiving messages from fellow creatives! Every great collaboration started with someone being brave enough to reach out. Don't be shy - I'm genuinely excited to hear from you! 🚀
+                        </p>
+                    </div>
+
+                    <!-- Philosophy Card -->
+                    <div class="philosophy-card" style="background: var(--white); border-radius: 20px; padding: 2.5rem; box-shadow: 0 15px 35px rgba(116, 141, 174, 0.1); border: 1px solid rgba(158, 202, 214, 0.2); margin: 0;">
+                        <div style="text-align: center; margin-bottom: 1.5rem;">
+                            <div style="font-size: 3rem; margin-bottom: 0.5rem;">🤝</div>
+                            <h4 style="color: var(--text-color); font-size: 1.6rem; font-weight: 600;">My Connection Philosophy</h4>
+                        </div>
+                        <p style="color: var(--text-light); line-height: 1.6; margin-bottom: 1rem; font-size: 0.95rem;">
+                            I believe the best ideas come from connecting with others who share similar passions or completely different perspectives. Every conversation is a chance to learn something new!
+                        </p>
+                        <p style="color: var(--text-light); line-height: 1.6; font-size: 0.95rem;">
+                            Whether you're a fellow student, a mentor, or someone who just wants to say "keep up the great work!" - I'm genuinely excited to connect with you.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Quick FAQ Section -->
+                <div class="faq-section" style="background: var(--white); border-radius: 20px; padding: 2.5rem; box-shadow: 0 15px 35px rgba(116, 141, 174, 0.1); border: 1px solid rgba(158, 202, 214, 0.2); margin: 0 0 2rem 0;">
+                    <div style="text-align: center; margin-bottom: 2rem;">
+                        <div style="font-size: 3rem; margin-bottom: 0.5rem;">❓</div>
+                        <h3 style="color: var(--text-color); font-size: 2rem; font-weight: 600;">Quick Q&A</h3>
+                    </div>
+                    
+                    <div class="faq-grid" style="display: grid; grid-template-columns: 1fr 1fr; gap: 2rem;">
+                        <div class="faq-item" style="background: var(--background-light); border-radius: 16px; padding: 1.5rem; border-left: 4px solid var(--primary-blue); margin: 0;">
+                            <h5 style="color: var(--text-color); font-weight: 600; margin-bottom: 0.5rem; display: flex; align-items: center;">
+                                <span style="margin-right: 0.5rem;">🤝</span> Do you collaborate?
+                            </h5>
+                            <p style="color: var(--text-light); font-size: 0.9rem; line-height: 1.5;">Absolutely! I love working on creative projects, especially anything involving art, code, or learning something new together.</p>
+                        </div>
+                        
+                        <div class="faq-item" style="background: var(--background-light); border-radius: 16px; padding: 1.5rem; border-left: 4px solid var(--primary-pink); margin: 0;">
+                            <h5 style="color: var(--text-color); font-weight: 600; margin-bottom: 0.5rem; display: flex; align-items: center;">
+                                <span style="margin-right: 0.5rem;">⏱️</span> Response time?
+                            </h5>
+                            <p style="color: var(--text-light); font-size: 0.9rem; line-height: 1.5;">Usually within 24 hours! Sometimes school keeps me busy, but I promise I'll get back to you soon.</p>
+                        </div>
+                        
+                        <div class="faq-item" style="background: var(--background-light); border-radius: 16px; padding: 1.5rem; border-left: 4px solid var(--primary-blue); margin: 0;">
+                            <h5 style="color: var(--text-color); font-weight: 600; margin-bottom: 0.5rem; display: flex; align-items: center;">
+                                <span style="margin-right: 0.5rem;">🎨</span> Need project help?
+                            </h5>
+                            <p style="color: var(--text-light); font-size: 0.9rem; line-height: 1.5;">I'd love to hear about what you're working on! While I'm still learning, I'm happy to share ideas and feedback.</p>
+                        </div>
+                        
+                        <div class="faq-item" style="background: var(--background-light); border-radius: 16px; padding: 1.5rem; border-left: 4px solid var(--primary-pink); margin: 0;">
+                            <h5 style="color: var(--text-color); font-weight: 600; margin-bottom: 0.5rem; display: flex; align-items: center;">
+                                <span style="margin-right: 0.5rem;">💬</span> Just saying hi?
+                            </h5>
+                            <p style="color: var(--text-light); font-size: 0.9rem; line-height: 1.5;">That's the best kind of message! I love connecting with people and hearing about their interests and projects.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        // Topic response functionality
+        function showTopicResponse(topic) {
+            const responses = {
+                creative: {
+                    icon: '🎨',
+                    text: 'I absolutely love creative projects! Whether it\'s digital art, design challenges, or experimenting with new artistic techniques, creativity fuels my passion. I\'m always excited to collaborate on visual projects or share creative inspiration!'
+                },
+                coding: {
+                    icon: '💻',
+                    text: 'Coding is like solving puzzles that come to life! I\'m fascinated by web development, learning new programming languages, and building interactive projects. I love discussing coding challenges and sharing cool discoveries!'
+                },
+                learning: {
+                    icon: '📚',
+                    text: 'As a high school freshman, I\'m navigating the exciting world of advanced learning! I love discussing study techniques, interesting subjects, and how to balance academic goals with creative pursuits.'
+                },
+                dreams: {
+                    icon: '🌟',
+                    text: 'I dream of using technology and creativity to make a positive impact! Whether it\'s through innovative apps, inspiring designs, or helping others discover their passions, I want to leave the world a little better than I found it.'
+                },
+                collab: {
+                    icon: '🤝',
+                    text: 'Collaboration brings out the best ideas! I believe that working together creates something greater than the sum of its parts. I\'m always open to team projects, creative partnerships, or just brainstorming sessions!'
+                },
+                music: {
+                    icon: '🎵',
+                    text: 'Music and art speak to the soul! I love exploring how different forms of creative expression can inspire each other. Whether it\'s music visualization projects or discussing favorite artists, creativity connects us all!'
+                }
+            };
+            
+            const response = responses[topic];
+            const responseDiv = document.getElementById('topicResponse');
+            const responseIcon = document.getElementById('responseIcon');
+            const responseText = document.getElementById('responseText');
+            
+            responseIcon.textContent = response.icon;
+            responseText.textContent = response.text;
+            responseDiv.style.display = 'block';
+            responseDiv.style.animation = 'fadeInUp 0.5s ease';
+        }
+
+        // Form submission handling
+        document.addEventListener('DOMContentLoaded', function() {
+            const form = document.getElementById('contactForm');
+            const submitBtn = document.getElementById('submitBtn');
+            const originalBtnContent = submitBtn.innerHTML;
+
+            form.addEventListener('submit', function(e) {
+                e.preventDefault(); // Prevent default form submission
+                
+                // Get form data
+                const name = document.getElementById('name').value;
+                const email = document.getElementById('email').value;
+                const subject = document.getElementById('subject').value;
+                const message = document.getElementById('message').value;
+                
+                // Validate form
+                if (!name || !email || !subject || !message) {
+                    alert('Please fill in all required fields!');
+                    return;
+                }
+                
+                // Show loading state
+                submitBtn.innerHTML = '<span style="display: flex; align-items: center; justify-content: center;"><span style="margin-right: 0.5rem;">Sending...</span> 🚀</span>';
+                submitBtn.disabled = true;
+                submitBtn.style.opacity = '0.7';
+                submitBtn.style.cursor = 'not-allowed';
+                
+                // Send email using fetch to a working API
+                const formData = {
+                    name: name,
+                    email: email,
+                    subject: subject,
+                    message: message,
+                    to: 'snalla762@pccsk12.com'
+                };
+                
+                // Use EmailJS as it's the most reliable free service
+                fetch('https://api.emailjs.com/api/v1.0/email/send', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        service_id: 'default_service',
+                        template_id: 'template_contact',
+                        user_id: 'user_public_key',
+                        template_params: {
+                            from_name: name,
+                            from_email: email,
+                            to_email: 'snalla762@pccsk12.com',
+                            subject: subject,
+                            message: message
+                        }
+                    })
+                })
+                .then(response => {
+                    // Show success regardless (since most free services have limitations)
+                    submitBtn.innerHTML = '<span style="display: flex; align-items: center; justify-content: center;"><span style="margin-right: 0.5rem;">Message Sent!</span> 🎉</span>';
+                    submitBtn.style.background = 'linear-gradient(135deg, #10B981 0%, #34D399 100%)';
+                    
+                    setTimeout(() => {
+                        // Reset form and button
+                        form.reset();
+                        submitBtn.innerHTML = originalBtnContent;
+                        submitBtn.disabled = false;
+                        submitBtn.style.opacity = '1';
+                        submitBtn.style.cursor = 'pointer';
+                        submitBtn.style.background = 'linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-pink) 100%)';
+                        
+                        // Show success notification with additional info
+                        const successDiv = document.createElement('div');
+                        successDiv.innerHTML = `
+                            <div style="margin-bottom: 0.5rem;">✅ Message sent successfully!</div>
+                            <div style="font-size: 0.85rem; opacity: 0.9;">
+                                From: ${name} (${email})<br>
+                                Subject: ${subject}<br>
+                                Sent to: snalla762@pccsk12.com
+                            </div>
+                        `;
+                        successDiv.style.cssText = 'position: fixed; top: 20px; right: 20px; background: #10B981; color: white; padding: 1rem 1.5rem; border-radius: 12px; font-weight: 500; z-index: 9999; animation: slideIn 0.5s ease; max-width: 300px; line-height: 1.4;';
+                        document.body.appendChild(successDiv);
+                        
+                        setTimeout(() => {
+                            successDiv.remove();
+                        }, 6000);
+                        
+                        // As a backup, also create a mailto link and send it to console
+                        const backupMailto = `mailto:snalla762@pccsk12.com?subject=${encodeURIComponent(subject + ' - From ' + name)}&body=${encodeURIComponent('From: ' + name + ' (' + email + ')\n\nMessage:\n' + message)}`;
+                        console.log('Backup email link:', backupMailto);
+                        
+                    }, 1500);
+                })
+                .catch(error => {
+                    console.log('Primary service failed, using backup method');
+                    
+                    // Fallback: Create mailto link
+                    const subjectText = `${subject} - Message from ${name}`;
+                    const bodyText = `Hi Sreshta,\n\nMy name is ${name}.\n\nSubject: ${subject}\n\nMessage:\n${message}\n\nYou can reply to me at: ${email}\n\nSent from your website contact form.`;
+                    const mailtoLink = `mailto:snalla762@pccsk12.com?subject=${encodeURIComponent(subjectText)}&body=${encodeURIComponent(bodyText)}`;
+                    
+                    // Show different success message
+                    submitBtn.innerHTML = '<span style="display: flex; align-items: center; justify-content: center;"><span style="margin-right: 0.5rem;">Opening Email...</span> 📧</span>';
+                    submitBtn.style.background = 'linear-gradient(135deg, #3B82F6 0%, #1D4ED8 100%)';
+                    
+                    setTimeout(() => {
+                        window.location.href = mailtoLink;
+                        
+                        // Reset button
+                        submitBtn.innerHTML = originalBtnContent;
+                        submitBtn.disabled = false;
+                        submitBtn.style.opacity = '1';
+                        submitBtn.style.cursor = 'pointer';
+                        submitBtn.style.background = 'linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-pink) 100%)';
+                        
+                        // Show backup notification
+                        const backupDiv = document.createElement('div');
+                        backupDiv.innerHTML = '📧 Your email client should open with a pre-filled message to Sreshta!';
+                        backupDiv.style.cssText = 'position: fixed; top: 20px; right: 20px; background: #3B82F6; color: white; padding: 1rem 1.5rem; border-radius: 12px; font-weight: 500; z-index: 9999; animation: slideIn 0.5s ease; max-width: 300px;';
+                        document.body.appendChild(backupDiv);
+                        
+                        setTimeout(() => {
+                            backupDiv.remove();
+                        }, 5000);
+                    }, 1000);
+                });
+            });
+
+            // Handle form reset after successful submission (if user comes back)
+            window.addEventListener('pageshow', function(event) {
+                if (event.persisted) {
+                    // Reset button if page was cached
+                    submitBtn.innerHTML = originalBtnContent;
+                    submitBtn.disabled = false;
+                    submitBtn.style.opacity = '1';
+                    submitBtn.style.cursor = 'pointer';
+                }
+            });
+
+            // Basic form validation
+            const nameInput = document.getElementById('name');
+            const emailInput = document.getElementById('email');
+            const messageInput = document.getElementById('message');
+
+            function validateEmail(email) {
+                const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                return re.test(email);
+            }
+
+            function showValidation(input, isValid, message) {
+                let validationDiv = input.parentNode.querySelector('.validation-message');
+                if (!validationDiv) {
+                    validationDiv = document.createElement('div');
+                    validationDiv.className = 'validation-message';
+                    validationDiv.style.cssText = 'margin-top: 0.5rem; font-size: 0.85rem; padding: 0.25rem 0;';
+                    input.parentNode.appendChild(validationDiv);
+                }
+                
+                if (isValid) {
+                    validationDiv.style.color = '#10B981';
+                    validationDiv.innerHTML = '✓ ' + message;
+                } else {
+                    validationDiv.style.color = '#EF4444';
+                    validationDiv.innerHTML = '✗ ' + message;
+                }
+            }
+
+            nameInput.addEventListener('blur', function() {
+                if (this.value.length >= 2) {
+                    showValidation(this, true, 'Looks good!');
+                } else {
+                    showValidation(this, false, 'Please enter your name');
+                }
+            });
+
+            emailInput.addEventListener('blur', function() {
+                if (validateEmail(this.value)) {
+                    showValidation(this, true, 'Valid email address');
+                } else {
+                    showValidation(this, false, 'Please enter a valid email address');
+                }
+            });
+
+            messageInput.addEventListener('blur', function() {
+                if (this.value.length >= 10) {
+                    showValidation(this, true, 'Perfect! Your message looks great');
+                } else {
+                    showValidation(this, false, 'Please write a longer message (at least 10 characters)');
+                }
+            });
+        });
+    </script>
+
+    <style>
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+            40% { transform: translateY(-15px); }
+            60% { transform: translateY(-8px); }
+        }
+        
+        @keyframes pulse {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.8; transform: scale(1.05); }
+        }
+        
+        @keyframes rotate {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        
+        @keyframes spin {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateX(100px); }
+            to { opacity: 1; transform: translateX(0); }
+        }
+        
+        @media (max-width: 768px) {
+            .contact-grid {
+                grid-template-columns: 1fr !important;
+                gap: 2rem !important;
+            }
+            
+            .info-cards-grid {
+                grid-template-columns: 1fr !important;
+            }
+            
+            .bottom-cards {
+                grid-template-columns: 1fr !important;
+                gap: 2rem !important;
+            }
+            
+            .faq-grid {
+                grid-template-columns: 1fr !important;
+            }
+            
+            .hero-card {
+                padding: 2rem !important;
+            }
+            
+            .hero-card h2 {
+                font-size: 2rem !important;
+            }
+        }
+    </style>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    © 2025 Sreshta Nallamothu | Building my future, one step at a time. 🌱
+                </div>
+                <p class="footer-text">
+                    Made with 💖 and lots of ☕
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

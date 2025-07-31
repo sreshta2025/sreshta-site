@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Interests - Sreshta Nallamothu</title>
+    <meta name="description" content="From art and music to books and code - explore all the things that spark my creativity!">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@200;300;400;500;600;700;800&family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌸</text></svg>">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <span class="brand-flower">🌸</span>
+                <span class="brand-text">Sreshta Nallamothu</span>
+            </div>
+            
+            <div class="nav-menu" id="navMenu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="projects.html" class="nav-link">Projects</a>
+                <a href="interests.html" class="nav-link active">Interests</a>
+                <a href="journey.html" class="nav-link">Journey</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+
+            <div class="nav-controls">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+                    <span class="theme-icon">🌙</span>
+                </button>
+                <button class="mobile-toggle" id="mobileToggle" aria-label="Toggle mobile menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content page-content">
+        <!-- Interests Section -->
+        <section class="section interests-section" id="interests">
+            <div class="floating-elements">
+                <div class="floating-element" style="top: 15%; left: 5%;">🎨</div>
+                <div class="floating-element" style="top: 60%; right: 8%;">💻</div>
+                <div class="floating-element" style="top: 35%; left: 88%;">📚</div>
+                <div class="floating-element" style="top: 75%; left: 12%;">🎵</div>
+                <div class="floating-element" style="top: 25%; right: 25%;">✨</div>
+            </div>
+            
+            <div class="container">
+                <div class="section-header">
+                    <h1 class="section-title">My Interests</h1>
+                    <p class="section-subtitle">
+                        From art and music to books and code - explore all the things that spark my creativity and curiosity!
+                    </p>
+                    
+                    <div class="interest-filters">
+                        <button class="filter-btn active" data-filter="all">All Interests</button>
+                        <button class="filter-btn" data-filter="creative-arts">🎨 Creative Arts</button>
+                        <button class="filter-btn" data-filter="technology">💻 Technology</button>
+                        <button class="filter-btn" data-filter="academic">📚 Academic</button>
+                        <button class="filter-btn" data-filter="lifestyle">🌟 Lifestyle</button>
+                    </div>
+                </div>
+                
+                <div class="interests-hero">
+                    <div class="hero-content">
+                        <div class="hero-left">
+                            <div class="hero-icon-group">
+                                <span class="hero-icon">💫</span>
+                                <span class="hero-icon">🌟</span>
+                                <span class="hero-icon">✨</span>
+                            </div>
+                        </div>
+                        <div class="hero-right">
+                            <h2>What Drives My Curiosity</h2>
+                            <p>
+                                I'm fascinated by so many different things! Each interest feeds into the others, creating this 
+                                beautiful web of creativity and learning. Whether I'm coding a new project, sketching in my 
+                                notebook, or getting lost in a good book, everything connects and inspires everything else.
+                            </p>
+                            <div class="hero-stats">
+                                <div class="stat-item">
+                                    <span class="stat-number">20+</span>
+                                    <span class="stat-label">Active Interests</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-number">4</span>
+                                    <span class="stat-label">Main Categories</span>
+                                </div>
+                                <div class="stat-item">
+                                    <span class="stat-number">∞</span>
+                                    <span class="stat-label">Learning Journey</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="interests-masonry">
+                    <div class="masonry-column">
+                        <div class="interest-category creative-arts">
+                            <div class="category-header">
+                                <span class="category-icon">🎨</span>
+                                <h3>Creative Arts</h3>
+                                <p class="category-description">Where imagination becomes reality</p>
+                            </div>
+                            <div class="interest-items">
+                                <div class="interest-item featured expandable" data-category="creative-arts">
+                                    <div class="item-icon">🖌️</div>
+                                    <h4>Digital Illustration <span class="expand-indicator">+</span></h4>
+                                    <p>Creating artwork on my computer - it's like having an infinite canvas with unlimited colors!</p>
+                                    <div class="expanded-content">
+                                        <div class="interest-details">
+                                            <h5>Tools I Use:</h5>
+                                            <ul>
+                                                <li>Adobe Photoshop & Illustrator</li>
+                                                <li>Procreate on iPad</li>
+                                                <li>Figma for UI design</li>
+                                            </ul>
+                                            <h5>Current Projects:</h5>
+                                            <p>Working on a series of character illustrations and exploring abstract digital art techniques.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="interest-item">
+                                    <div class="item-icon">✏️</div>
+                                    <h4>Traditional Drawing</h4>
+                                    <p>There's something magical about pencil on paper - the texture, the control, the simplicity.</p>
+                                </div>
+                                <div class="interest-item">
+                                    <div class="item-icon">🌈</div>
+                                    <h4>Color Theory</h4>
+                                    <p>Understanding how colors work together and the emotions they evoke - pure fascination!</p>
+                                </div>
+                                <div class="interest-item">
+                                    <div class="item-icon">📱</div>
+                                    <h4>UI/UX Design</h4>
+                                    <p>Designing beautiful, functional interfaces that make people's lives easier and more enjoyable.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="interest-category academic">
+                            <div class="category-header">
+                                <span class="category-icon">📚</span>
+                                <h3>Academic</h3>
+                                <p class="category-description">Learning never stops being exciting</p>
+                            </div>
+                            <div class="interest-items">
+                                <div class="interest-item featured">
+                                    <div class="item-icon">🔢</div>
+                                    <h4>Mathematics</h4>
+                                    <p>The beautiful logic and patterns that underlie everything - from art to algorithms!</p>
+                                </div>
+                                <div class="interest-item">
+                                    <div class="item-icon">📖</div>
+                                    <h4>Literature</h4>
+                                    <p>Stories have the power to transport us, teach us, and help us understand different perspectives.</p>
+                                </div>
+                                <div class="interest-item">
+                                    <div class="item-icon">🔬</div>
+                                    <h4>Science</h4>
+                                    <p>Understanding how the world works - from the smallest atoms to the largest galaxies.</p>
+                                </div>
+                                <div class="interest-item">
+                                    <div class="item-icon">🧠</div>
+                                    <h4>Psychology</h4>
+                                    <p>Fascinated by how minds work and what motivates people to create and connect.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="masonry-column">
+                        <div class="interest-category technology">
+                            <div class="category-header">
+                                <span class="category-icon">💻</span>
+                                <h3>Technology</h3>
+                                <p class="category-description">Building the future, one line of code at a time</p>
+                            </div>
+                            <div class="interest-items">
+                                <div class="interest-item featured expandable" data-category="technology">
+                                    <div class="item-icon">🌐</div>
+                                    <h4>Web Development <span class="expand-indicator">+</span></h4>
+                                    <p>Creating websites and web applications - bringing ideas to life on the internet!</p>
+                                    <div class="expanded-content">
+                                        <div class="interest-details">
+                                            <h5>Technologies I Love:</h5>
+                                            <ul>
+                                                <li>HTML5, CSS3, JavaScript</li>
+                                                <li>React, Node.js</li>
+                                                <li>Responsive design principles</li>
+                                            </ul>
+                                            <h5>Recent Learning:</h5>
+                                            <p>Exploring modern CSS features, accessibility best practices, and performance optimization.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="interest-item">
+                                    <div class="item-icon">⚡</div>
+                                    <h4>JavaScript</h4>
+                                    <p>My favorite programming language - so versatile and powerful for creating interactive experiences.</p>
+                                </div>
+                                <div class="interest-item">
+                                    <div class="item-icon">🎮</div>
+                                    <h4>Creative Coding</h4>
+                                    <p>Using code as an artistic medium to create animations, visualizations, and interactive art.</p>
+                                </div>
+                                <div class="interest-item">
+                                    <div class="item-icon">🛡️</div>
+                                    <h4>Accessibility</h4>
+                                    <p>Making sure technology works for everyone - inclusive design is just good design.</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="interest-category lifestyle">
+                            <div class="category-header">
+                                <span class="category-icon">🌟</span>
+                                <h3>Lifestyle & Hobbies</h3>
+                                <p class="category-description">The things that bring joy to everyday life</p>
+                            </div>
+                            <div class="interest-items">
+                                <div class="interest-item featured">
+                                    <div class="item-icon">🎵</div>
+                                    <h4>Music</h4>
+                                    <p>The soundtrack to creativity - I love discovering new artists and genres that inspire my work.</p>
+                                </div>
+                                <div class="interest-item">
+                                    <div class="item-icon">📚</div>
+                                    <h4>Reading</h4>
+                                    <p>Books are portals to other worlds - fiction, non-fiction, poetry, everything teaches me something.</p>
+                                </div>
+                                <div class="interest-item">
+                                    <div class="item-icon">📸</div>
+                                    <h4>Photography</h4>
+                                    <p>Capturing moments and finding beauty in everyday things - the world is full of art waiting to be noticed.</p>
+                                </div>
+                                <div class="interest-item">
+                                    <div class="item-icon">✍️</div>
+                                    <h4>Writing</h4>
+                                    <p>Expressing thoughts and ideas through words - whether it's creative writing or documenting my journey.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                    
+                    <div class="interest-category technology">
+                        <div class="category-header">
+                            <span class="category-icon">💻</span>
+                            <h3>Technology</h3>
+                            <p class="category-description">Building the future, one line of code at a time</p>
+                        </div>
+                        <div class="interest-items">
+                            <div class="interest-item featured expandable" data-category="technology">
+                                <div class="item-icon">🌐</div>
+                                <h4>Web Development <span class="expand-indicator">+</span></h4>
+                                <p>Creating websites and web applications - bringing ideas to life on the internet!</p>
+                                <div class="expanded-content">
+                                    <div class="interest-details">
+                                        <h5>Technologies I Love:</h5>
+                                        <ul>
+                                            <li>HTML5, CSS3, JavaScript</li>
+                                            <li>React, Node.js</li>
+                                            <li>Responsive design principles</li>
+                                        </ul>
+                                        <h5>Recent Learning:</h5>
+                                        <p>Exploring modern CSS features, accessibility best practices, and performance optimization.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="interest-item">
+                                <div class="item-icon">⚡</div>
+                                <h4>JavaScript</h4>
+                                <p>My favorite programming language - so versatile and powerful for creating interactive experiences.</p>
+                            </div>
+                            <div class="interest-item">
+                                <div class="item-icon">🎮</div>
+                                <h4>Creative Coding</h4>
+                                <p>Using code as an artistic medium to create animations, visualizations, and interactive art.</p>
+                            </div>
+                            <div class="interest-item">
+                                <div class="item-icon">🛡️</div>
+                                <h4>Accessibility</h4>
+                                <p>Making sure technology works for everyone - inclusive design is just good design.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="interest-category academic">
+                        <div class="category-header">
+                            <span class="category-icon">📚</span>
+                            <h3>Academic</h3>
+                            <p class="category-description">Learning never stops being exciting</p>
+                        </div>
+                        <div class="interest-items">
+                            <div class="interest-item featured">
+                                <div class="item-icon">🔢</div>
+                                <h4>Mathematics</h4>
+                                <p>The beautiful logic and patterns that underlie everything - from art to algorithms!</p>
+                            </div>
+                            <div class="interest-item">
+                                <div class="item-icon">📖</div>
+                                <h4>Literature</h4>
+                                <p>Stories have the power to transport us, teach us, and help us understand different perspectives.</p>
+                            </div>
+                            <div class="interest-item">
+                                <div class="item-icon">🔬</div>
+                                <h4>Science</h4>
+                                <p>Understanding how the world works - from the smallest atoms to the largest galaxies.</p>
+                            </div>
+                            <div class="interest-item">
+                                <div class="item-icon">🧠</div>
+                                <h4>Psychology</h4>
+                                <p>Fascinated by how minds work and what motivates people to create and connect.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="interest-category lifestyle">
+                        <div class="category-header">
+                            <span class="category-icon">🌟</span>
+                            <h3>Lifestyle & Hobbies</h3>
+                            <p class="category-description">The things that bring joy to everyday life</p>
+                        </div>
+                        <div class="interest-items">
+                            <div class="interest-item featured">
+                                <div class="item-icon">🎵</div>
+                                <h4>Music</h4>
+                                <p>The soundtrack to creativity - I love discovering new artists and genres that inspire my work.</p>
+                            </div>
+                            <div class="interest-item">
+                                <div class="item-icon">📚</div>
+                                <h4>Reading</h4>
+                                <p>Books are portals to other worlds - fiction, non-fiction, poetry, everything teaches me something.</p>
+                            </div>
+                            <div class="interest-item">
+                                <div class="item-icon">📸</div>
+                                <h4>Photography</h4>
+                                <p>Capturing moments and finding beauty in everyday things - the world is full of art waiting to be noticed.</p>
+                            </div>
+                            <div class="interest-item">
+                                <div class="item-icon">✍️</div>
+                                <h4>Writing</h4>
+                                <p>Expressing thoughts and ideas through words - whether it's creative writing or documenting my journey.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Current Fascinations -->
+                <div class="current-fascinations">
+                    <h2 class="section-title">Current Fascinations</h2>
+                    <div class="fascinations-grid">
+                        <div class="fascination-card">
+                            <div class="fascination-icon">🤖</div>
+                            <h4>AI & Machine Learning</h4>
+                            <p>The intersection of creativity and artificial intelligence - how can AI tools enhance human creativity rather than replace it?</p>
+                            <div class="fascination-status">Exploring</div>
+                        </div>
+                        
+                        <div class="fascination-card">
+                            <div class="fascination-icon">🌱</div>
+                            <h4>Sustainable Design</h4>
+                            <p>How can design and technology help create a more sustainable future? Green coding, eco-friendly design practices, and more!</p>
+                            <div class="fascination-status">Learning</div>
+                        </div>
+                        
+                        <div class="fascination-card">
+                            <div class="fascination-icon">🎮</div>
+                            <h4>Game Development</h4>
+                            <p>Creating interactive experiences and games - combining storytelling, art, and programming in one amazing medium.</p>
+                            <div class="fascination-status">Planning</div>
+                        </div>
+                        
+                        <div class="fascination-card">
+                            <div class="fascination-icon">🌐</div>
+                            <h4>Digital Communities</h4>
+                            <p>How online spaces bring people together and foster creativity - the social aspect of technology fascinates me.</p>
+                            <div class="fascination-status">Observing</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Interest Connections -->
+                <div class="interest-connections">
+                    <div class="connections-card">
+                        <div class="connections-icon">🔗</div>
+                        <h2>How Everything Connects</h2>
+                        <div class="connections-content">
+                            <div class="connection-item">
+                                <span class="connection-path">Art + Code</span>
+                                <span class="connection-result">Creative coding projects and beautiful user interfaces</span>
+                            </div>
+                            <div class="connection-item">
+                                <span class="connection-path">Music + Programming</span>
+                                <span class="connection-result">Beat by Beat and other audio visualization projects</span>
+                            </div>
+                            <div class="connection-item">
+                                <span class="connection-path">Psychology + Design</span>
+                                <span class="connection-result">User-centered design that considers human behavior</span>
+                            </div>
+                            <div class="connection-item">
+                                <span class="connection-path">Math + Art</span>
+                                <span class="connection-result">Patterns, fractals, and algorithmic art generation</span>
+                            </div>
+                            <div class="connection-item">
+                                <span class="connection-path">Writing + Technology</span>
+                                <span class="connection-result">This portfolio and documentation of my learning journey</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    © 2025 Sreshta Nallamothu | Building my future, one step at a time. 🌱
+                </div>
+                <p class="footer-text">
+                    Made with 💖 and lots of ☕
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
